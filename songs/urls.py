@@ -4,4 +4,5 @@ from . import views
 urlpatterns = [
     path('', views.songs_list),
     path('<int:pk>/', views.song_detail),
+    path('like/<int:pk>/', views.like_song),
 ]
